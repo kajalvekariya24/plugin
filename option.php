@@ -35,6 +35,7 @@ function my_cool_plugin_settings_page() {
 	// delete_option( 'my_option' ); 
 	//get option     $admin_email = get_option( 'admin_email' );
 	//echo get_site_option( 'siteurl' );
+
 ?>
 <div class="wrap">
 <h1>Your Plugin Name</h1>
@@ -45,26 +46,49 @@ function my_cool_plugin_settings_page() {
     <table class="form-table">
         <tr valign="top">
         <th scope="row">Fname</th>
-        <td><input type="text" name="fname" value="<?php echo esc_attr( get_option('fname') ); ?>" /></td>
+        <td><input type="text" name="fname" value="<?php  add_option( 'fname'); ?>" /></td>
         </tr>
          
         <tr valign="top">
         <th scope="row">Lname</th>
-        <td><input type="text" name="lname" value="<?php echo esc_attr( get_option('lname') ); ?>" /></td>
+        <td><input type="text" name="lname" value="<?php  add_option('lname'); ?>" /></td>
         </tr>
         
         <tr valign="top">
         <th scope="row">City</th>
-        <td><input type="text" name="city" value="<?php echo esc_attr( get_option('city') ); ?>" /></td>
+        <td><input type="text" name="city" value="<?php add_option('city'); ?>" /></td>
         </tr>
         <tr valign="top">
         <th scope="row">Number</th>
-        <td><input type="text" name="number" value="<?php echo esc_attr( get_option('number') ); ?>" /></td>
+        <td><input type="text" name="number" value="<?php add_option('number'); ?>" /></td>
         </tr>
     </table>
     
     <?php submit_button(); ?>
 
 </form>
+
+<table class="form-table">
+        <tr valign="top">
+        <th scope="row">Fname</th>
+        <td> <?php echo esc_attr( get_option('fname') ); ?></td>  
+        </tr>
+         
+        <tr valign="top">
+        <th scope="row">Lname</th>
+        <td> <?php echo esc_attr( get_option('lname') ); ?></td>
+        </tr>
+        
+        <tr valign="top">
+        <th scope="row">City</th>
+        <td> <?php echo esc_attr( get_option('city') ); ?></td>
+        </tr>
+        <tr valign="top">
+        <th scope="row">Number</th>
+        <td><?php echo esc_attr( get_option('number') );  ?></td>
+        </tr>
+    </table>
+
+
 </div>
 <?php } ?>
