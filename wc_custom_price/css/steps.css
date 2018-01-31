@@ -1,0 +1,146 @@
+ul.tabs{margin:0;padding:0;list-style:none}ul.tabs li{background:0 0;color:#222;display:inline-block;padding:10px 15px;cursor:pointer}ul.tabs li.current{background:#ededed;color:#222}.tab-content{display:none;border:1px solid #ededed;padding:15px}.tab-content.current{display:inherit}
+.container_design_my_own label{width: 100%}
+.container_design_my_own input{width: 100%; }
+.line_row{margin-bottom: 10px;}
+input.invalid{border: 1px solid #F00;}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.loading{display: none;text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 99999999;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    padding-top: 10%;
+}
+#con_steps label{text-transform: capitalize;}
+#save_range label{display: block; width: 100%}
+#save_range .row_line input{display: block; width: 100%}
+.add_row, .add_row_style,.add_row_clr, .add_row_gls{background: #222;color: #FFF;padding: 4px 10px;text-decoration: none;}
+.remCF, .remCF_style,.remCFclr, .remCFgls {background: #F00;color: #FFF;padding: 4px 10px;text-decoration: none;}
+.add_row:hover,.add_row:focus,
+.remCF:hover,.remCF:focus{color:#FFF;}
+.ranges_box{display: inline-block;width: 33%;text-align: center;padding: 1%;}
+.canva_area{text-align: center;}
+#respondCanvas{max-width: 100%;}
+
+#no_of_doors input[type="radio"] {
+   position: absolute; visibility: hidden;
+}
+
+#no_of_doors label > input:checked + .doors_available {
+    border: 2px solid #f00;
+}
+
+
+.ranges_box{position:relative;}
+.ranges_box label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+.ranges_box label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+.ranges_box label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
+.fix_td th{text-align: left;
+    text-transform: uppercase;
+    border-bottom: 1px solid #CCC;
+    line-height: 40px;
+}
+.fix_td td{width: 100px;}
+.door_style_pic{    max-height: 100px;
+    width: auto;
+    display: none;
+    position: absolute;
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px;
+    right: -70px;
+    top: -40px;}
+.door_style_pic_lable:hover .door_style_pic {display: block;}
+.door_style_pic_lable{position: relative;}
+.doors_available{    display: inline-block;text-align: center;
+    border: 1px solid #ccc;
+    margin: 10px 10px 30px;
+    padding: 20px 20px;
+    cursor: pointer;
+    background: #353535;
+    color: #FFF;
+    font-size: 15px;}
+    .doors_available span{font-size: 22px;display: block}
+.doors_style, .doors_style_pic{    display: inline-block;    width: 7%;    position: relative;
+    padding: 1%;
+    margin-bottom: 20px;}
+.doors_style img{cursor: pointer;    height: 100px;
+    width: auto;}
+
+#doors_design label > input,
+#color_design label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+#doors_design label > input + img,
+#color_design label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+#doors_design label > input:checked + img,
+#color_design label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;padding: 1px;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+}
+.meta_price_desc input,
+.meta_price_desc textarea{width:100%;}
+.meta_price_desc textarea{min-height: 100px;}
+.range_desc{
+    background: rgba(0,0,0,.8);
+    color: #FFF;
+    padding: 12px 2%;
+    font-size: 13px;
+    position: absolute;
+    width: 94%;
+    border-radius: 3px;
+    border: 1px solid #1f1f1f;
+    display: none;
+}
+.ranges_box:hover .range_desc{display: block}
+.canvas_l{    width: 79%;    display: inline-block;}
+.price_r{    width: 20%;    display: inline-block;    vertical-align: top;}
+.can_wrapper{    border-bottom: 1px solid #dadada;
+    margin-bottom: 30px;
+    padding-bottom: 30px;}
+.ranges_box img{    width: 100%;
+    height: 280px;}    
+
+.customstyle tr,
+.customstyle td{max-width: 100px;}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 2px 7px;
+    cursor: pointer;
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+.customstyle input[type=text]{max-width: 100%;}
+.range_door_style_pic{    max-height: 28px;
+    width: auto;  display: inline;
+    width: 100%;}
+#no_of_doors label{position:relative;}    
