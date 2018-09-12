@@ -55,5 +55,6 @@ function my_magic_function_1()
    echo 'ram';
 }
 ?>
-
+/////////////impotant link
+https://code.tutsplus.com/tutorials/create-a-custom-wordpress-plugin-from-scratch--net-2668
  
