@@ -40,6 +40,8 @@ function my_magic_function()
 	//echo get_site_option( 'siteurl' );
 
      echo 'hello';
+	
+	include('test.php');
 
 	 ?>
       
